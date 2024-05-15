@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Poetsen+One&display=swap');
+
+
+.head
+{
+    font-family: "Cinzel", serif;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 3px;
+    margin-top:2px;
+    
+}
+
+.subh
+{
+    font-family: "Great vibes", cursive;
+    font-size:55px;
+    text-align: center;
+    margin-top:1px;
+    
+}
+
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+font-size:20px;
+text-align:center;
+font-weight: bold;
+text-indent:5px;
+
+}
+
+
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    
+
+
+}
+.blue{
+    font-weight:bold;
+    color:purple;
+}
