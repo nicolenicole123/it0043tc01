@@ -1,0 +1,221 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styles */
+.container {
+  background: url(bg.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 10px;
+  max-width: 100%;
+}
+
+/* Card Styles */
+.card {
+  flex: 1 1 calc(25% - 10px); /* 4 columns */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: white;
+  display: none; /* Hidden by default, shown on breakpoints */
+}
+
+.card .pokeball {
+  width: 30px;
+  height: 30px;
+  display: none; /* Hidden by default, shown on breakpoints */
+}
+
+.card .types {
+  display: none; /* Hidden by default, shown on breakpoints */
+}
+
+.card .types p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Pokemon-specific background colors */
+.bellsprout { background-color: #FAF205; }
+.charmander { background-color: #F37821; }
+.eevee { background-color: #CD8F46; }
+.jigglypuff { background-color: #F0A8CF; }
+.pikachu { background-color: #FCD61B; }
+.snorlax { background-color: #0E5B9C; }
+.squirtle { background-color: #85E6D8; }
+.caterpie { background-color: #A3F559; }
+.dratini { background-color: #50B0E7; }
+.rattata { background-color: #AA5AE7; }
+.zubat { background-color: #586FE7; }
+.weedle { background-color: #DBC48B; }
+
+/* Adjust grid layout automatically based on available space */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 calc(25% - 10px); /* 4 columns */
+}
+
+@media (max-width: 1200px) {
+  .card {
+      flex: 1 1 calc(33.33% - 10px); /* 3 columns */
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+      flex: 1 1 calc(50% - 10px); /* 2 columns */
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+  }
+  .card {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      padding: 20px;
+  }
+  .card p,
+  .card .pokeball,
+  .card .types {
+      display: inline-block;
+  }
+  .card .pokeball {
+      margin-left: auto;
+  }
+  .types {
+      margin-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+  .card .pokeball {
+      display: none;
+  }
+  .card p,
+  .card .types {
+      display: block;
+      margin-top: 10px;
+  }
+}
+
+/* Hover effects */
+.card:hover {
+  background-image: url(hover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  .card:hover {
+      background-image: url(hover.jpg);
+  }
+}
+
+/* List View */
+@media (max-width: 700px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      flex: 1 1 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+  }
+
+  .card img {
+      width: 50px; /* Adjust as needed */
+      height: auto;
+  }
+
+  .card p {
+      font-size: 1.2rem;
+      color: black; /* Changed to black */
+      margin-left: 10px;
+  }
+
+  .pokeball {
+      width: 20px; /* Adjust as needed */
+      height: 20px; /* Adjust as needed */
+      margin-left: auto;
+  }
+
+  .types p {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+  }
+
+  .grass { background-color: #8EDD65; }
+  .fire { background-color: #FF6961; }
+  .water { background-color: #6495ED; }
+  .normal { background-color: #C0C0C0; }
+  .electric { background-color: #FFD700; }
+  .fairy { background-color: #FFB6C1; }
+  .bug { background-color: #7CFC00; }
+  .dragon { background-color: #8A2BE2; }
+  .poison { background-color: #800080; }
+
+  .types p:hover {
+      background-color: black; /* Hover color black */
+      color: white;
+  }
+}
+
+
