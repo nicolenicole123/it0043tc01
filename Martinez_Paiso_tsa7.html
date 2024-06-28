@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tool</title>
+    <link rel="stylesheet" href="Martinez_Paiso_tsa7.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="control">
+            <button class="btn" onclick="reset()" style="grid-column: 1/3;">Reset</button>
+            <input type="number" id="gap" class="input" min="0" value="0">
+            <button class="btn" onclick="setGap()">Gap</button>
+            <div style="grid-column: 1/3;">Direction</div>
+            <button class="btn" onclick="setDir(1)">Row</button>
+            <button class="btn" onclick="setDir(2)">Col</button>
+            <div style="grid-column: 1/3;">Justify</div>
+            <button class="btn" onclick="setJust(1)">Start</button>
+            <button class="btn" onclick="setJust(2)">Center</button>
+            <button class="btn" onclick="setJust(3)">End</button>
+            <button class="btn" onclick="setJust(4)">Between</button>
+            <button class="btn" onclick="setJust(5)">Around</button>
+            <button class="btn" onclick="setJust(6)">Evenly</button>
+            <div style="grid-column: 1/3;">Align</div>
+            <button class="btn" onclick="setAlign(1)">Start</button>
+            <button class="btn" onclick="setAlign(2)">Center</button>
+            <button class="btn" onclick="setAlign(3)">End</button>
+            <button class="btn" onclick="setAlign(4)">Stretch</button>
+            <div style="grid-column: 1/3;">Grow</div>
+            <button class="btn" onclick="setGrow(0)">Reset</button>
+            <button class="btn" onclick="setGrow(4)">All</button>
+            <input type="number" id="grow1" class="input" min="0" value="0">
+            <button class="btn" onclick="setGrow(1)">Box 1</button>
+            <input type="number" id="grow2" class="input" min="0" value="0">
+            <button class="btn" onclick="setGrow(2)">Box 2</button>
+            <input type="number" id="grow3" class="input" min="0" value="0">
+            <button class="btn" onclick="setGrow(3)">Box 3</button>
+        </div>
+
+        <div class="flex" id="flex">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+        </div>
+    </div>
+
+    <script src="Martinez_Paiso_tsa7.js"></script>
+</body>
+</html>
+
