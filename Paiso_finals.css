@@ -1,0 +1,422 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 1s ease;
+}
+body {
+    font-family: "Margarine", sans-serif;
+    background: url('Backgroundfinals.png') no-repeat center center fixed; 
+    background-size: cover;
+    text-align: center;
+}
+
+.navi {
+    background-color: rgba(111, 83, 57, 0.9);
+    padding: 10px 0;
+    transition: background-color 0.5s ease;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+.logo {
+    height: 80px;
+}
+.menu-list {
+    display: flex;
+}
+li {
+    list-style: none;
+    margin-left: 30px;
+}
+li > a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+li > a:hover {
+    transform: scale(1.05);
+    color: black;
+    background-color: pink;
+    text-underline-offset: 10px;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 100px;
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.home-img {
+    display: inline-block;
+    width: 50%;
+}
+.welcome-text {
+    width: 60%;
+    padding-left: 20px;
+}
+.welcome-text h1 {
+    font-family: "Margarine", sans-serif;
+    font-size: 2.5rem;
+    color: rgb(119, 100, 60);
+    margin-bottom: 50px;
+}
+.welcome-text p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.about {
+    background-color: rgb(193, 163, 119);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 150px;
+}
+.about h2 {
+    font-size: 2.5rem;
+    color: rgb(15, 14, 14);
+    margin-bottom: 10px;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img {
+    display: inline-block;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+}
+.about-text {
+    text-align: left;
+    margin-left: 20px;
+    color: rgba(47, 43, 40, 0.9);
+}
+.about-text h3 {
+    font-size: 2rem;
+}
+.about-text p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.portfolio {
+    padding: 20px;
+}
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: rgb(119, 100, 60);
+    margin-bottom: 20px;
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.portfolio-item {
+    border-radius: 7px;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: rgba(111, 83, 57, 0.9);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover;
+}
+.portfolio-item a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: pink;
+    color: rgb(88, 64, 36);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.portfolio-item a:hover {
+    background-color: rgb(156, 188, 222);
+    color: black;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.blog {
+    padding: 20px;
+    background-color: rgb(193, 163, 119);
+}
+
+.blog-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.blog-img {
+    width: 40%;
+    height: auto;
+    margin: 0 20px;
+}
+.blog-text {
+    width: 60%;
+    padding: 0 20px;
+    color: rgb(25, 24, 21);
+}
+
+
+.contact {
+    padding: 20px;
+}
+.contact h2 {
+    font-size: 2.5rem;
+    color: rgb(119, 100, 60);
+    margin-bottom: 20px;
+}
+.contact img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+}
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.social-media-links a {
+    margin: 0 10px;
+}
+.social-media-links img {
+    width: 40px;
+    height: 40px;
+}
+.social-media-links a:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.separator {
+    border: 1px solid rgb(89, 61, 0);
+    width: 100%;
+    margin: 20px auto;
+}
+
+.services {
+    padding: 200px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.services h2 {
+    font-size: 2.5rem;
+    color: rgb(119, 100, 60);
+    margin-bottom: 20px;
+}
+.service {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+}
+.service-logo {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.service h3 {
+    font-size: 1.5rem;
+}
+.service:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.drawings, .bakes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.drawing-img, .bake-img {
+    width: 30%;
+    margin: 10px;
+}
+
+
+.works {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.works h2 {
+    font-size: 2rem;
+    color: rgb(119, 100, 60);
+    margin-bottom: 20px;
+}
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    width: 22%;
+    margin: 10px;
+    border-radius: 15px; /* Rounded border */
+    overflow: hidden; 
+}
+
+.work-item img {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 902px) {
+    .work-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-item {
+        width: 90%;
+    }
+}
+
+
+/* Breakpoint for screens up to 768px */
+@media (max-width: 902px) {
+    .home, .about, .blog-post {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .home-content, .about-content, .blog-post {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img, .about-img, .blog-img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text, .about-text, .blog-text {
+        width: 90%;
+        padding: 0;
+    }
+
+    .portfolio-container, .services {
+        width: 100%;
+    }
+
+    .portfolio-item, .service {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
+
+/* Breakpoint for screens up to 480px */
+@media (max-width: 480px) {
+    .home, .about, .portfolio, .blog, .services, .contact {
+        padding: 20px 10px;
+    }
+
+    .portfolio-item, .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .portfolio-item img, .service-logo {
+        width: 100%;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .menu-list {
+        flex-direction: column;
+    }
+
+    .menu-list li {
+        margin: 5px 0;
+    }
+
+    /* Breakpoint for screens up to 480px continued */
+
+    .home-img, .about-img, .blog-img {
+        width: 100%;
+    }
+
+    .welcome-text, .about-text, .blog-text {
+        width: 100%;
+    }
+
+
+    .blog-post {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
